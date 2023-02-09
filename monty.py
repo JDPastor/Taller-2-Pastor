@@ -49,3 +49,6 @@ print(posterior_p)
 
 
 print(model.get_independencies())
+
+posterior_p2 = infer.query(["C"], evidence={"A": 1})
+print(posterior_p2)
